@@ -1,6 +1,6 @@
-# Docker Buildx :heart: AWS :heart: Drone CI/CD
+## Docker Buildx :heart: AWS :heart: Drone CI/CD
 
-## What is this ?
+### What is this ?
 
 The dockerfile in this repository allows you to build an AWS ECR plugin based on Docker Buildx for Drone.
 
@@ -9,11 +9,11 @@ Instead of rebuilding everything, it uses 2 upstream images:
 * [plugins/ecr](https://hub.docker.com/r/plugins/ecr): the original AWS ECR plugin from the [Drone](https://github.com/drone/drone) authors.
 
 
-## Where to get the plugin ?
+### Where to get the plugin ?
 
 Soon... for now you need to build it yourself
 
-## How to use it?
+### How to use it?
 
 ```
 kind: pipeline
@@ -38,7 +38,7 @@ steps:
 ```
 Refer to the regular Drone ECR plugin documentation for more options: http://plugins.drone.io/drone-plugins/drone-ecr/
 
-## What kind of policy do I need to make this work?
+### What kind of policy do I need to make this work?
 
 ```
 {
