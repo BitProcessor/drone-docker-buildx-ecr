@@ -36,7 +36,7 @@ steps:
     registry: 000000000000.dkr.ecr.us-east-1.amazonaws.com
     region: us-east-1
 ```
-Refer to the [regular Drone ECR](http://plugins.drone.io/drone-plugins/drone-ecr/) plugin documentation for more options: 
+Refer to the [regular Drone ECR](http://plugins.drone.io/drone-plugins/drone-ecr/) plugin documentation for more options
 
 ### What kind of policy do I need to make this work?
 
