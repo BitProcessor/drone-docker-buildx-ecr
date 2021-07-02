@@ -5,8 +5,8 @@
 The dockerfile in this repository allows you to build an AWS ECR plugin based on Docker Buildx for Drone.
 
 Instead of rebuilding everything, it uses 2 upstream images:
-* [thegeeklab/drone-docker-buildx](https://hub.docker.com/r/thegeeklab/drone-docker-buildx): a fork of the regular Drone Docker plugin and uses Docker Buildx to build multi-arch containers
-* [plugins/ecr](https://hub.docker.com/r/plugins/ecr): the original AWS ECR plugin from the [Drone](https://github.com/drone/drone) authors.
+* [thegeeklab/drone-docker-buildx](https://hub.docker.com/r/thegeeklab/drone-docker-buildx): a fork of the regular Drone Docker plugin which uses Docker Buildx to build multi-arch containers
+* [plugins/ecr](https://hub.docker.com/r/plugins/ecr): the original AWS ECR plugin from the [Drone](https://github.com/drone/drone) authors
 
 
 ### Where to get the plugin ?
@@ -36,7 +36,7 @@ steps:
     registry: 000000000000.dkr.ecr.us-east-1.amazonaws.com
     region: us-east-1
 ```
-Refer to the regular Drone ECR plugin documentation for more options: http://plugins.drone.io/drone-plugins/drone-ecr/
+Refer to the [regular Drone ECR](http://plugins.drone.io/drone-plugins/drone-ecr/) plugin documentation for more options: 
 
 ### What kind of policy do I need to make this work?
 
