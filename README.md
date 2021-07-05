@@ -11,7 +11,11 @@ Instead of rebuilding everything, it uses 2 upstream images:
 
 ### Where to get the plugin ?
 
-Soon... for now you need to build it yourself
+The docker image is available here:
+
+`docker pull ghcr.io/bitprocessor/drone-docker-buildx-ecr:1.0.0`
+
+Note that this initial version only contains the amd64 version. You can use it to perform multi-platform builds with buildx on Drone, using a docker-runner on amd64.
 
 ### How to use it?
 
@@ -22,7 +26,7 @@ name: default
 
 steps:
 - name: docker  
-  image: <insert your docker image here>
+  image: ghcr.io/bitprocessor/drone-docker-buildx-ecr:1.0.0
   privileged: true       <= Can be avoided, look into privileged drone plugins
   settings:
     platforms:
